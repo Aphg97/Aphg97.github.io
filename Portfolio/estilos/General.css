@@ -1,0 +1,117 @@
+/* GENERALES*/
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+}
+
+html, body{
+	min-height: 100vh;  /* 1vh = 1% del alto - Funciona mejor que % en el caso de mínimos */
+	width: 100vw;   /* 1vw = 1% del ancho de la pantalla - Funciona mejor que % en el caso de mínimos */
+	font-size:calc(16px + 1vw);	 /* Fuente responsive: tamaño mínimo 16px;*/
+}
+
+li{
+	list-style: none;
+}
+
+#header, #footer{
+	width: 100vw;
+	min-height: 10vh;	/* Header y footer ocuparan 10% del alto de la pantalla */
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+#header h1, #footer h1{
+	border: solid 1px white;
+	padding: 0.5%;	
+	min-width: 25vw;	/* Tamaño mínimo por si no cabe la letra que no desborde */
+	text-align: center;
+	font-size: 1.5em;	 
+	/* 
+		1em es equivalente al tamaño de la fuente actual (por defecto son 16px pero se puede cambiar en el body)
+		2em sería el doble
+	*/
+}
+
+
+.wrap{
+
+	min-height:80vh;  
+	
+	display: flex;
+	flex-wrap: wrap;
+	
+	justify-content: space-around;
+	align-content: space-around;
+	
+	/*	Header y footer ocupan 10vh  
+		El wrap como mínimo ocupa 80 para 
+		que el footer este siempre pegado al borde inferior */
+		
+	width: 100vw;
+	border: solid Grey 5px;
+}
+
+.wrap h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+	min-height: 5vh;
+	width: 100%;
+	font-size: 1.1em;	
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	
+	justify-content: space-around;
+	align-content: space-around;
+
+	
+	border: double black 5px;
+	min-height:70vh;
+
+	width: 100%;	
+
+	padding:0.5vmin;
+	overflow: hidden;
+}
+
+.caja{
+	border: solid black 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	color: white;
+	width: 30%;	
+	min-height: 225px;
+	min-width: 360px;
+	margin: 1vmin;
+	
+	
+}
+
+.caja1{
+	background-color:grey;
+}
+
+.caja2{
+	background-color:grey;
+}
+
+.caja3{
+	background-color:grey;
+}
+
+.caja4{
+	background-color:grey;
+}
+
